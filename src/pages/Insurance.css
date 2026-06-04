@@ -1,0 +1,119 @@
+.insurers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.insurer-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.insurer-name { font-weight: 600; color: #1a3d36; font-size: 0.95rem; }
+
+.insurer-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.badge-commercial { background: #e8f4f1; color: #2a6b5e; }
+.badge-utah { background: #fff3e0; color: #e65100; }
+.badge-medicaid { background: #e3f2fd; color: #1565c0; }
+
+.insurance-note {
+  background: #f9fafb;
+  border-left: 3px solid #4a9e8e;
+  padding: 1rem 1.25rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.insurance-note a { color: #2a6b5e; font-weight: 600; }
+
+.fees-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.fees-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.fees-card h2 { color: #1a3d36; font-size: 1.3rem; margin-bottom: 0.75rem; }
+.fees-card p { color: #555; line-height: 1.7; margin-bottom: 1rem; }
+
+.fees-list {
+  padding-left: 1.2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fees-list li { color: #555; font-size: 0.9rem; line-height: 1.6; }
+
+.payment-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.payment-chip {
+  background: #e8f4f1;
+  color: #2a6b5e;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.verify-box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.verify-box h2 { color: #1a3d36; font-size: 1.6rem; margin-bottom: 1.5rem; }
+
+.verify-steps {
+  text-align: left;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.verify-steps li { color: #555; line-height: 1.7; font-size: 0.95rem; }
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .insurers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .fees-grid { grid-template-columns: 1fr; }
+  .insurers-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .insurers-grid { grid-template-columns: 1fr; }
+}

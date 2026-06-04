@@ -1,0 +1,119 @@
+.hero {
+  min-height: 560px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26,61,54,0.85) 0%, rgba(42,107,94,0.7) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  padding: 2rem 3rem;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.92;
+}
+
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.intro-text h2 { font-size: 1.9rem; color: #1a3d36; margin-bottom: 1rem; }
+.intro-text p { color: #555; line-height: 1.7; margin-bottom: 1rem; }
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.issues-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.issue-chip {
+  background: #fff;
+  border: 1.5px solid #4a9e8e;
+  color: #2a6b5e;
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.section-cta { text-align: center; margin-top: 1rem; }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.why-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.why-card h3 { color: #1a3d36; font-size: 1rem; margin-bottom: 0.5rem; }
+.why-card p { color: #666; font-size: 0.9rem; line-height: 1.6; }
+
+.cta-banner {
+  background: #2a6b5e;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-banner h2 { font-size: 2rem; margin-bottom: 0.75rem; }
+.cta-banner p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 1.5rem; }
+
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero-content { padding: 2rem; }
+  .hero-content h1 { font-size: 2rem; }
+  .intro-grid { grid-template-columns: 1fr; }
+  .intro-image { order: -1; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr; }
+}

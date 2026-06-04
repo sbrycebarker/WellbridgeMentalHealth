@@ -1,0 +1,80 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.info-card h3 {
+  color: #1a3d36;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.info-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.info-card ul li {
+  color: #555;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.info-card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4a9e8e;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2a6b5e;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.map-link:hover { text-decoration: underline; }
+
+.phone-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2a6b5e;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.phone-link:hover { text-decoration: underline; }
+
+.phone-note { color: #777; font-size: 0.875rem !important; }
+
+.map-wrap { border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+
+@media (max-width: 600px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
