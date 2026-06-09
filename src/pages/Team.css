@@ -24,6 +24,23 @@
   display: block;
 }
 
+.team-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #c8e6e1;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-photo-placeholder span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2a6b5e;
+  opacity: 0.5;
+}
+
 .team-name-card {
   background: #1a3d36;
   color: #fff;

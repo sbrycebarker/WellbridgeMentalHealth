@@ -15,8 +15,12 @@ export default function Footer() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/team">Our Team</Link></li>
+            <li><Link to="/neurofeedback">Neurofeedback</Link></li>
             <li><Link to="/insurance">Insurance</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/terms">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
         <div className="footer-contact">

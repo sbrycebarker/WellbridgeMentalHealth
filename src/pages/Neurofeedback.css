@@ -1,0 +1,95 @@
+.nf-intro {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.nf-intro-text h2 { color: #1a3d36; font-size: 1.8rem; margin-bottom: 1rem; }
+.nf-intro-text p { color: #555; line-height: 1.7; margin-bottom: 1rem; }
+
+.nf-highlight-box {
+  background: #1a3d36;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  position: sticky;
+  top: 90px;
+}
+
+.nf-highlight-box h3 { font-size: 1.2rem; margin-bottom: 1rem; }
+.nf-highlight-box p { font-size: 0.92rem; line-height: 1.7; opacity: 0.9; margin-bottom: 0.75rem; }
+.nf-emphasis { font-weight: 600; opacity: 1 !important; color: #7ecdc0; }
+.nf-highlight-box .btn-primary { margin-top: 0.75rem; background: #4a9e8e; }
+.nf-highlight-box .btn-primary:hover { background: #3a8070; }
+
+.nf-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nf-benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.nf-check {
+  color: #2a6b5e;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.nf-how h2 { color: #1a3d36; font-size: 1.8rem; margin-bottom: 2rem; }
+
+.nf-steps { display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; }
+
+.nf-step {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.nf-step-num {
+  width: 44px;
+  height: 44px;
+  background: #2a6b5e;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.nf-step h3 { color: #1a3d36; font-size: 1rem; margin-bottom: 0.35rem; }
+.nf-step p { color: #555; font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+.nf-specialist { max-width: 700px; margin: 0 auto; text-align: center; }
+.nf-specialist h2 { color: #1a3d36; font-size: 1.8rem; margin-bottom: 1rem; }
+.nf-specialist p { color: #555; line-height: 1.7; margin-bottom: 1.5rem; }
+
+@media (max-width: 900px) {
+  .nf-benefits-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nf-intro { grid-template-columns: 1fr; }
+  .nf-highlight-box { position: static; }
+}
+
+@media (max-width: 480px) {
+  .nf-benefits-grid { grid-template-columns: 1fr 1fr; }
+}
